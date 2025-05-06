@@ -1,6 +1,4 @@
-import Link from "next/link"
-import { Dumbbell, Mail, Phone, MapPin, Clock } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Mail, Phone, MapPin, Clock } from "lucide-react"
 import ContactForm from "@/components/contact-form"
 
 export const metadata = {
@@ -10,59 +8,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Dumbbell className="h-6 w-6" />
-            <span className="text-xl font-bold">FitForge</span>
-          </div>
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="/" className="text-sm font-medium hover:underline underline-offset-4">
-              Home
-            </Link>
-            <Link href="/about" className="text-sm font-medium hover:underline underline-offset-4">
-              About
-            </Link>
-            <Link href="/membership" className="text-sm font-medium hover:underline underline-offset-4">
-              Membership
-            </Link>
-            <Link href="/classes" className="text-sm font-medium hover:underline underline-offset-4">
-              Classes
-            </Link>
-            <Link href="/contact" className="text-sm font-medium hover:underline underline-offset-4">
-              Contact
-            </Link>
-            <Link href="/blog" className="text-sm font-medium hover:underline underline-offset-4">
-              Blog
-            </Link>
-          </nav>
-          <div className="flex items-center gap-4">
-            <Button asChild className="hidden md:flex">
-              <Link href="/membership">Join Now</Link>
-            </Button>
-            <Button variant="outline" size="icon" className="md:hidden">
-              <span className="sr-only">Toggle menu</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-6 w-6"
-              >
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
-            </Button>
-          </div>
-        </div>
-      </header>
+    <div className="flex min-h-screen flex-col max-w-6xl mx-auto">
       <main className="flex-1">
         {/* Hero Section */}
         <section className="py-16 md:py-24 bg-muted/50">
@@ -251,119 +197,45 @@ export default function ContactPage() {
               </p>
             </div>
             <div className="grid gap-6 md:grid-cols-2 lg:gap-12 max-w-4xl mx-auto">
-              <div className="space-y-4">
-                <div>
-                  <h3 className="text-lg font-bold">How do I book a class?</h3>
-                  <p className="text-muted-foreground">
-                    You can book a class through our website, mobile app, or by calling our front desk. Members can book
-                    classes up to 7 days in advance.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold">What should I bring to my first visit?</h3>
-                  <p className="text-muted-foreground">
-                    Please bring a valid ID, comfortable workout clothes, athletic shoes, and a water bottle. Towels are
-                    provided at the gym.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold">Do you offer free trials?</h3>
-                  <p className="text-muted-foreground">
-                    Yes, we offer a 3-day free trial for new visitors. Contact us to schedule your trial period.
-                  </p>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div>
-                  <h3 className="text-lg font-bold">Is there parking available?</h3>
-                  <p className="text-muted-foreground">
-                    Yes, we have a dedicated parking lot for members with 2 hours of free parking. Street parking is
-                    also available nearby.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold">Can I freeze my membership?</h3>
-                  <p className="text-muted-foreground">
-                    Yes, members can freeze their membership for up to 3 months per year for medical reasons or extended
-                    travel.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold">Do you have showers and lockers?</h3>
-                  <p className="text-muted-foreground">
-                    Yes, we have fully equipped locker rooms with showers, lockers, and amenities. Bring your own lock
-                    or rent one at the front desk.
-                  </p>
-                </div>
-              </div>
+                {FAQ.map((faq, index) => (
+                  <div key={index}>
+                    <h3 className="text-lg font-bold">{faq.question}</h3>
+                    <p className="text-muted-foreground">
+                      {faq.answer}
+                    </p>
+                  </div>
+                ))}
             </div>
           </div>
         </section>
       </main>
-      <footer className="border-t py-8 md:py-12">
-        <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Dumbbell className="h-6 w-6" />
-                <span className="text-xl font-bold">FitForge</span>
-              </div>
-              <p className="text-sm text-muted-foreground">Transforming lives through fitness since 2010.</p>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="/" className="text-muted-foreground hover:text-foreground">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="text-muted-foreground hover:text-foreground">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/membership" className="text-muted-foreground hover:text-foreground">
-                    Membership
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/classes" className="text-muted-foreground hover:text-foreground">
-                    Classes
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4">Contact</h3>
-              <address className="not-italic text-sm text-muted-foreground">
-                <p>123 Fitness Street</p>
-                <p>New York, NY 10001</p>
-                <p className="mt-2">info@fitforge.com</p>
-                <p>(123) 456-7890</p>
-              </address>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4">Hours</h3>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                <li>
-                  <span className="font-medium">Mon-Fri:</span> 5am - 10pm
-                </li>
-                <li>
-                  <span className="font-medium">Sat:</span> 7am - 8pm
-                </li>
-                <li>
-                  <span className="font-medium">Sun:</span> 8am - 6pm
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} FitForge. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
+
+const FAQ = [
+  {
+    question: "How do I book a class?",
+    answer: "You can book a class through our website, mobile app, or by calling our front desk. Members can book classes up to 7 days in advance.",
+  },
+  {
+    question: "What should I bring to my first visit?",
+    answer: "Please bring a valid ID, comfortable workout clothes, athletic shoes, and a water bottle. Towels are provided at the gym.",
+  },
+  {
+    question: "Do you offer free trials?",
+    answer: "Yes, we offer a 3-day free trial for new visitors. Contact us to schedule your trial period.",
+  },
+  {
+    question: "Is there parking available?",
+    answer: "Yes, we have a dedicated parking lot for members with 2 hours of free parking. Street parking is also available nearby.",
+  },
+  {
+    question: "Can I freeze my membership?",
+    answer: "Yes, members can freeze their membership for up to 3 months per year for medical reasons or extended travel.",
+  },
+  {
+    question: "Do you have showers and lockers?",
+    answer: "Yes, we have fully equipped locker rooms with showers, lockers, and amenities. Bring your own lock or rent one at the front desk.",
+  },
+]
