@@ -132,35 +132,38 @@ export const blogPosts = [
   {
     id: 1,
     title: "10 Essential Tips for Building Muscle",
-    excerpt: "Learn the fundamental principles of muscle building, from proper nutrition to effective workout routines.",
+    excerpt:
+      "Learn the fundamental principles of muscle building, from proper nutrition to effective workout routines.",
     category: "Training",
     author: "David Martinez",
     date: "April 21, 2023",
     readTime: "5 min read",
     image: "/placeholder.svg",
-    tags: ["Muscle Building", "Nutrition", "Workout"]
+    tags: ["Muscle Building", "Nutrition", "Workout"],
   },
   {
     id: 2,
     title: "The Complete Guide to HIIT Workouts",
-    excerpt: "Discover how High-Intensity Interval Training can transform your fitness routine and maximize results.",
+    excerpt:
+      "Discover how High-Intensity Interval Training can transform your fitness routine and maximize results.",
     category: "Cardio",
     author: "Lisa Chen",
     date: "April 18, 2023",
     readTime: "7 min read",
     image: "/placeholder.svg",
-    tags: ["HIIT", "Cardio", "Fat Loss"]
+    tags: ["HIIT", "Cardio", "Fat Loss"],
   },
   {
     id: 3,
     title: "Nutrition Tips for Pre and Post Workout",
-    excerpt: "Optimize your workout performance with the right nutrition timing and food choices.",
+    excerpt:
+      "Optimize your workout performance with the right nutrition timing and food choices.",
     category: "Nutrition",
     author: "Emma Wilson",
     date: "April 15, 2023",
     readTime: "6 min read",
     image: "/placeholder.svg",
-    tags: ["Nutrition", "Recovery", "Performance"]
+    tags: ["Nutrition", "Recovery", "Performance"],
   },
   {
     id: 4,
@@ -194,9 +197,8 @@ export const blogPosts = [
     author: "Jessica Chen",
     category: "Wellness",
     slug: "mindfulness-exercise",
-  }
-]
-
+  },
+];
 
 export const trainers = [
   {
