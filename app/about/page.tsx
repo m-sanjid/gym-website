@@ -31,7 +31,7 @@ export default function AboutPage() {
               </div>
               <div className="relative aspect-square overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=600"
+                  src="/gym.jpeg"
                   alt="FitForge gym interior"
                   fill
                   className="object-cover"

@@ -205,7 +205,7 @@ export const trainers = [
     name: "Alex Rivera",
     role: "Head Trainer",
     bio: "Alex has over 10 years of experience in fitness training and specializes in strength and conditioning. Certified in CrossFit and personal training.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/gym2.jpeg",
     socials: {
       twitter: "#",
       instagram: "#",
@@ -213,10 +213,10 @@ export const trainers = [
     },
   },
   {
-    name: "Jessica Chen",
+    name: "Jessica Johnson",
     role: "Yoga Instructor",
     bio: "Jessica is a certified yoga instructor with 8 years of experience. She specializes in vinyasa flow and restorative yoga practices.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/gymyoga.jpeg",
     socials: {
       twitter: "#",
       instagram: "#",
@@ -227,7 +227,7 @@ export const trainers = [
     name: "Marcus Johnson",
     role: "Nutrition Coach",
     bio: "Marcus holds a degree in nutrition and helps members develop personalized meal plans to complement their fitness goals.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/gym5.jpg",
     socials: {
       twitter: "#",
       instagram: "#",
@@ -238,7 +238,7 @@ export const trainers = [
     name: "Sophia Williams",
     role: "HIIT Specialist",
     bio: "Sophia specializes in high-intensity interval training and has helped hundreds of clients achieve rapid results through her energetic classes.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/gymhiit.jpeg",
     socials: {
       twitter: "#",
       instagram: "#",

@@ -19,7 +19,7 @@ const classes = [
     duration: 60,
     intensity: "Medium",
     trainer: "Sarah Johnson",
-    image: "/placeholder.svg",
+    image: "/gymyoga.jpeg",
     schedule: [
       { day: "Monday", time: "6:00 AM" },
       { day: "Wednesday", time: "6:00 AM" },
@@ -34,7 +34,7 @@ const classes = [
     duration: 45,
     intensity: "High",
     trainer: "Mike Thompson",
-    image: "/placeholder.svg",
+    image: "/gymhiit.jpeg",
     schedule: [
       { day: "Tuesday", time: "5:30 PM" },
       { day: "Thursday", time: "5:30 PM" }
@@ -48,7 +48,7 @@ const classes = [
     duration: 45,
     intensity: "High",
     trainer: "Lisa Chen",
-    image: "/placeholder.svg",
+    image: "/gym7.jpeg",
     schedule: [
       { day: "Monday", time: "7:00 PM" },
       { day: "Wednesday", time: "7:00 PM" },
@@ -63,7 +63,7 @@ const classes = [
     duration: 60,
     intensity: "Medium-High",
     trainer: "David Martinez",
-    image: "/placeholder.svg",
+    image: "/gym1.jpeg",
     schedule: [
       { day: "Tuesday", time: "6:00 AM" },
       { day: "Thursday", time: "6:00 AM" },
@@ -78,7 +78,7 @@ const classes = [
     duration: 50,
     intensity: "Low-Medium",
     trainer: "Emma Wilson",
-    image: "/placeholder.svg",
+    image: "/gymstretch.jpeg",
     schedule: [
       { day: "Monday", time: "9:00 AM" },
       { day: "Wednesday", time: "9:00 AM" },
@@ -93,7 +93,7 @@ const classes = [
     duration: 60,
     intensity: "High",
     trainer: "James Rodriguez",
-    image: "/placeholder.svg",
+    image: "/gym6.jpeg",
     schedule: [
       { day: "Tuesday", time: "7:00 PM" },
       { day: "Thursday", time: "7:00 PM" }
@@ -122,7 +122,7 @@ export default function ClassesPage() {
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/placeholder.svg?height=600&width=1200"
+              src="/gym1.jpeg"
               alt="Gym class in session"
               fill
               className="object-cover brightness-50"

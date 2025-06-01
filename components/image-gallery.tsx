@@ -6,27 +6,27 @@ import { Dialog, DialogContent } from "@/components/ui/dialog"
 
 const images = [
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/gym.jpeg",
     alt: "Weight training area with modern equipment",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/gym7.jpeg",
     alt: "Cardio section with treadmills and ellipticals",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/yogaarea.jpeg",
     alt: "Yoga studio with natural lighting",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/gym6.jpeg",
     alt: "Group fitness class in session",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/gym3.jpeg",
     alt: "Personal training session",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/gymstretch.jpeg",
     alt: "Recovery area with stretching equipment",
   },
 ]

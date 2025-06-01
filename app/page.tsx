@@ -16,7 +16,7 @@ export default function HomePage() {
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/placeholder.svg?height=1080&width=1920"
+              src="/gym_hero.jpg"
               alt="Gym background"
               fill
               className="object-cover brightness-50"

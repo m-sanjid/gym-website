@@ -38,7 +38,7 @@ export default function BlogPage() {
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/placeholder.svg?height=600&width=1200"
+              src="/gym.jpeg"
               alt="Blog hero"
               fill
               className="object-cover brightness-50"
